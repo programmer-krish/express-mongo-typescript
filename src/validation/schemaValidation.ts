@@ -19,4 +19,14 @@ const service = Joi.object().keys({
 
 const services = Joi.array().items(service);
 
-export { postSchema, services };
+const responseSchema = Joi.object().keys({
+    id: Joi.string(),
+    first_name: Joi.string().max(30).required(),
+    last_name: Joi.string().max(30).required(),
+    email: Joi.string().email().required(),
+    number: Joi.string(),
+    gender: Joi.string(),
+    photo: Joi.string()
+});
+
+export { postSchema, services, responseSchema };
