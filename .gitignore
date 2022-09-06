@@ -1,0 +1,5 @@
+node_modules
+.vscode
+.prettierrc
+.env
+package-lock.json
