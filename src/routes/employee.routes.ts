@@ -8,8 +8,8 @@ import { putEmployee } from '../controllers/employee.put.controller';
 import { deleteEmployeeById } from '../controllers/employee.delete.controller';
 
 router.post('/post/employee', employeePostController);
-router.get('/get/all', employeeGetAll);
-router.get('/getSpecificId/:id', getallEmployeesById);
-router.put('/update/:id', putEmployee);
-router.delete('/delete/:id', deleteEmployeeById);
+router.get('/get/employee', employeeGetAll);
+router.get('/getSpecificId/:empId', getallEmployeesById);
+router.put('/update/:empId', putEmployee);
+router.delete('/delete/:empId', deleteEmployeeById);
 export default router;
