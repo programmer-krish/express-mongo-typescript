@@ -12,11 +12,11 @@ const putEmployee = async (req: Request, res: Response) => {
             error: ERRORS.NOT_FOUND
         });
     }
-    const { first_name, last_name, email, number, gender, phtoto } = value;
+    const { first_name, last_name, email, number, gender, photo } = value;
     const id = req.params.empId;
 
     try {
-        await putEmployeeData(id, first_name, last_name, email, number, gender, phtoto);
+        await putEmployeeData(id, first_name, last_name, email, number, gender, photo);
         res.status(200).json({ message: 'Updated Successfully' });
     } catch (e) {
         log.info(e);
