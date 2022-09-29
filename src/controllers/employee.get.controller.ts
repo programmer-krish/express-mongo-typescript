@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { log } from '../logger';
+import { log } from '../logs/logger';
 import { ERRORS } from '../validation/error';
 import { services } from '../validation/schemaValidation';
 import { getEmployees } from '../services/employee.get.service';

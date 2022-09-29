@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { log } from '../logger';
+import { log } from '../logs/logger';
 import { putEmployeeData } from '../services/employee.put.service';
 import { ERRORS } from '../validation/error';
 import { postSchema } from '../validation/schemaValidation';

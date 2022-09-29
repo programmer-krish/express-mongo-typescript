@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import chalk from 'chalk';
 import http from 'http';
 import { app } from './app';
-import { log } from './logger';
+import { log } from './logs/logger';
 import { config } from './config/config';
 
 dotenv.config();

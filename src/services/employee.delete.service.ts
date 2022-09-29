@@ -1,5 +1,5 @@
 import { Employee } from '../models/employee.model';
-import { log } from '../logger';
+import { log } from '../logs/logger';
 
 const deleteEmployee = async (empId: string) => {
     try {

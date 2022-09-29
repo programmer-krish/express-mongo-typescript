@@ -1,5 +1,5 @@
 import { findById } from '../utils/employee.findById';
-import { log } from '../logger';
+import { log } from '../logs/logger';
 
 const putEmployeeData = async (id: string, firstName: string, lastName: string, email: string, number: string, gender: string, photo: string) => {
     try {

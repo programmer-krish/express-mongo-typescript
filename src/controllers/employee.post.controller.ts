@@ -2,7 +2,7 @@ import { ERRORS } from '../validation/error';
 import { createEmployee } from '../services/employee.post.service';
 import { postSchema } from '../validation/schemaValidation';
 import { Request, Response } from 'express';
-import { log } from '../logger';
+import { log } from '../logs/logger';
 
 //Create an Employee
 const employeePostController = async (req: Request, res: Response) => {

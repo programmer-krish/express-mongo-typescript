@@ -1,5 +1,5 @@
 import { findById } from '../utils/employee.findById';
-import { log } from '../logger';
+import { log } from '../logs/logger';
 
 const getEmployeeById = async (id: string) => {
     try {

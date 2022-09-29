@@ -1,5 +1,5 @@
 import { Employee } from '../models/employee.model';
-import { log } from '../logger';
+import { log } from '../logs/logger';
 
 const createEmployee = async (firstName: string, lastName: string, email: string, number: string, gender: string, photo: string) => {
     try {

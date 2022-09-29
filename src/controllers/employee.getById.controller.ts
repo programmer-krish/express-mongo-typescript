@@ -2,7 +2,7 @@ import { ERRORS } from '../validation/error';
 import { responseSchema } from '../validation/schemaValidation';
 import { getEmployeeById } from '../services/employee.getById.service';
 import { Request, Response } from 'express';
-import { log } from '../logger';
+import { log } from '../logs/logger';
 
 const getallEmployeesById = async (req: Request, res: any) => {
     const { error, value } = responseSchema.validate(res.body);
