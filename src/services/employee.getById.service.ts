@@ -4,14 +4,15 @@ import { log } from '../logger';
 const getEmployeeById = async (id: string) => {
     try {
         const getUser = await findById(id);
+        const { _id, first_name, last_name, email, number, gender, photo } = getUser;
         return {
-            id: getUser._id,
-            first_name: getUser.first_name,
-            last_name: getUser.last_name,
-            email: getUser.email,
-            number: getUser.number,
-            gender: getUser.gender,
-            photo: getUser.photo
+            id: _id,
+            first_name: first_name,
+            last_name: last_name,
+            email: email,
+            number: number,
+            gender: gender,
+            photo: photo
         };
     } catch (e) {
         log.info(e);
