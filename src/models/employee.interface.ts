@@ -6,3 +6,7 @@ export interface Employees {
     gender: string;
     photo: string;
 }
+
+export interface IEmployee{
+    id : string
+}

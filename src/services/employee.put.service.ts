@@ -1,15 +1,17 @@
 import { findById } from '../utils/employee.findById';
 import { log } from '../logs/logger';
+import { Employees, IEmployee } from '../models/employee.interface';
 
-const putEmployeeData = async (id: string, firstName: string, lastName: string, email: string, number: string, gender: string, photo: string) => {
+const putEmployeeData = async (value: Employees , id :string) => {
+            const { first_name, last_name, email, number, gender, photo } = value;
     try {
         const updatedEmployee = await findById(id);
 
-        if (firstName) {
-            updatedEmployee.first_name = firstName;
+        if (first_name) {
+            updatedEmployee.first_name = first_name;
         }
-        if (lastName) {
-            updatedEmployee.last_name = lastName;
+        if (last_name) {
+            updatedEmployee.last_name = last_name;
         }
         if (email) {
             updatedEmployee.email = email;

@@ -13,10 +13,9 @@ const employeePostController = async (req: Request, res: Response) => {
             error: ERRORS.NOT_FOUND
         });
     }
-    const { first_name, last_name, email, number, gender, photo } = value;
 
     try {
-        const data = await createEmployee(first_name, last_name, email, number, gender, photo);
+        const data = await createEmployee(value);
 
         res.status(201).json(data);
     } catch (e) {
