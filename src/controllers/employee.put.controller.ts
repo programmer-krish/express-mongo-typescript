@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { log } from '../logs/logger';
 import { putEmployeeData } from '../services/employee.put.service';
 import { ERRORS } from '../validation/error';
-import { postSchema } from '../validation/schemaValidation';
+import { postSchema } from '../schema/schema';
 
 const putEmployee = async (req: Request, res: Response) => {
     const { error, value } = postSchema.validate(req.body);

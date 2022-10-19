@@ -1,5 +1,5 @@
 import { ERRORS } from '../validation/error';
-import { reqParamasSchemaId, responseSchema } from '../validation/schemaValidation';
+import { reqParamasSchemaId, responseSchema } from '../schema/schema';
 import { getEmployeeById } from '../services/employee.getById.service';
 import { Request, Response } from 'express';
 import { log } from '../logs/logger';

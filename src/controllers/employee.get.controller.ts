@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { log } from '../logs/logger';
 import { ERRORS } from '../validation/error';
-import { services } from '../validation/schemaValidation';
+import { services } from '../schema/schema';
 import { getEmployees } from '../services/employee.get.service';
 
 const employeeGetAll = async (req: Request, res: any) => {

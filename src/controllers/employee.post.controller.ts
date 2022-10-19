@@ -1,6 +1,6 @@
 import { ERRORS } from '../validation/error';
 import { createEmployee } from '../services/employee.post.service';
-import { postSchema } from '../validation/schemaValidation';
+import { postSchema } from '../schema/schema';
 import { Request, Response } from 'express';
 import { log } from '../logs/logger';
 
