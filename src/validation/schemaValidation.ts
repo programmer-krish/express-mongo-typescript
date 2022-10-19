@@ -17,6 +17,10 @@ const service = Joi.object().keys({
     photo: Joi.string()
 });
 
+const reqParamasSchemaId = Joi.object({
+    id : Joi.string().id().required(),
+})
+
 const services = Joi.array().items(service);
 
 const responseSchema = Joi.object().keys({
@@ -29,4 +33,4 @@ const responseSchema = Joi.object().keys({
     photo: Joi.string()
 });
 
-export { postSchema, services, responseSchema };
+export { postSchema, services, responseSchema , reqParamasSchemaId };
